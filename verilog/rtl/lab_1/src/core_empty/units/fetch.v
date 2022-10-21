@@ -1,6 +1,6 @@
 `ifndef FETCH_V
 `define FETCH_V
-// `include "../params.vh"
+// `include "params.vh"
 module fetch #(
     // parameter INS_BUFFER = 64,
     parameter BTB_SIZE = 4,

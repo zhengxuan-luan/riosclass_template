@@ -31,5 +31,12 @@
 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/pipeline/frontend.v
 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/pipeline/backend.v
 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/core_empty.v
+/work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/bus_arbiter.v
+/work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/hehe.v
+
+./dpram64.sv
+./wb_arb.sv
+./wb_interconnect.sv
+./hehe_tb.sv
 
 

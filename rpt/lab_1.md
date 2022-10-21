@@ -6,3 +6,8 @@
 ![](./images/spike-dhrystone.png)
 ![](./images/spike-pk.png)
 ### GreenRio core RTL execution correctness
+The verification environment is located at **./verilog/dv**.
+1. Convert the orignal elf file into hex file to facilitate magic memory to read it.
+2. Instanse GreenRIos and magic memory in hehe_tb.sv, connecting them and giving rst and clk signal to motivate them.
+3. Use HTIF to detect whether the program executes successfully.
+![](./images/vcs-simulation.png)
