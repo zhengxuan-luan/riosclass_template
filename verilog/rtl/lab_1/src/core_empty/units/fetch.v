@@ -15,7 +15,7 @@ module fetch #(
     //whole fetch
     input clk,
     input reset,
-    input branch_valid_i,
+    input branch_valid_i, 
 
     //btb from fu
     input [31:0] btb_req_pc, 
@@ -57,13 +57,6 @@ module fetch #(
 
     //for test
     output ins_empty,
-    // output reg [31:0] pc,
-    // output [31:0] ins_pc_in,
-    // output [31:0] ins_next_pc_in,
-    // output [31:0] instruction_in,
-    // output buffer_full,
-    // output branch_predict_wrong,
-    // output reg [31:0] fetch_data,
 
     // exceptions
     output exception_valid_o,
@@ -81,7 +74,7 @@ wire judge_from_gshare;
 wire btb_taken;
 // wire buffer_full;
 wire [31:0] pc_from_btb;
-assign branch_predict_wrong = branch_valid_i && (real_branch != pc_out);
+assign branch_predict_wrong = branch_valid_i && ((real_branch != pc_out) || ins_empty);
 wire flush = (branch_predict_wrong | trap | mret) & !ins_empty;
 
 assign exception_valid_o = pc[1:0] != 2'b00;
@@ -94,29 +87,32 @@ wire [31:0] instruction_in;
 
 reg rff_misfetch;
 wire misfetch;
+wire pc_unpredict_taken;
 
 //next pc 
 always @(*) begin
-    if (trap) begin
+    if (wfi) begin
+        next_pc = pc;
+    end else if (trap) begin
         next_pc = trap_vector;
     end else if (mret) begin
         next_pc = mret_vector;
     end else if (branch_predict_wrong) begin
         next_pc = real_branch;
-    end else if (btb_taken && !judge_from_gshare && (icache_req_ready && icache_req_valid)) begin //need && judge_from_gshare
+    end else if (btb_taken && !judge_from_gshare) begin //need && judge_from_gshare
         next_pc = pc_from_btb;
-    end else if (!wfi && !buffer_full && (icache_req_ready && icache_req_valid)) begin
-        next_pc = pc + 4;
     end else begin
-        next_pc = pc;
+        next_pc = pc + 4;
     end
 end
+
+assign pc_unpredict_taken = trap | mret | branch_predict_wrong;
 
 //pc switch
 always @(posedge clk) begin
     if (reset) begin
         pc <= RESET_VECTOR;
-    end else begin
+    end else if ((icache_req_ready & icache_req_valid) | pc_unpredict_taken) begin
         pc <= next_pc;
     end
 end
@@ -152,7 +148,7 @@ end
 always @(posedge clk) begin
     if (reset) begin
         rff_misfetch <= 0;
-    end if (branch_predict_wrong | trap | mret) begin
+    end if ((branch_predict_wrong | trap | mret) && !(icache_resp_ready & icache_resp_valid)) begin
         rff_misfetch <= 1;
     end else if (icache_resp_ready & icache_resp_valid) begin
         rff_misfetch <= 0;

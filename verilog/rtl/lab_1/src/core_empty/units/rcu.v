@@ -94,6 +94,21 @@ module rcu (
     output [3:0] rob_cm_ecause,
     output [31:0] rob_cm_exp_pc
 );
+`ifdef COSIM
+import "DPI-C" function void log_print(input reg co_commit,  input int co_pc_in, input reg co_store_in, input reg co_fence, input co_mret, input co_wfi, input reg co_uses_csr, input int co_rob_rd, input reg co_csr_iss_ctrl, input int co_prf_name, input int co_csr_address);
+
+wire [31:0] co_prf_name = {{26{1'b0}}, rob_prd[cm_rob_line]};
+wire co_store_in = rob_op_lsu[cm_rob_line][3];
+wire co_fence = rob_op_fence[cm_rob_line];
+wire co_use_csr = rob_op_csr[cm_rob_line][2] | rob_op_csr[cm_rob_line][3];
+wire [31:0] co_rob_rd ={ {27{1'b0}}, rob_rd[cm_rob_line]};
+wire co_csr_iss_ctrl = iss_csr & (cm_rob_line == iss_rob_line);
+wire [31:0] co_csr_address = { {20{1'b0}}, rob_op_csr[cm_rob_line][15:4]};
+always@(negedge clk) begin
+    log_print(rob_cm_valid, rob_cm_exp_pc, co_store_in, co_fence, rob_cm_mret, rob_cm_wfi, co_use_csr, co_rob_rd, co_csr_iss_ctrl, co_prf_name, co_csr_address);
+end
+`endif
+
 
 integer i;
 // genvar j;
@@ -147,7 +162,7 @@ reg rob_op_fence [ROB_SIZE-1:0];
 //rob write signal
 wire [ROB_SIZE_WIDTH-1:0] wr_rob_line;
 wire rob_ready = !rob_used[wr_rob_line] & !free_list_empty;
-wire rob_wr_ready = rob_ready & valid_in;
+wire rob_wr_ready = rob_ready & valid_in & !trapped;
 assign rob_ready_out = rob_ready;
 
 //rob commit signal

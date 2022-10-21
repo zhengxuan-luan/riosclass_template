@@ -43,12 +43,19 @@ module hehe
     input m3_wbd_err_i
 );
 
+`ifdef EXITER
+wire [31:0] datalow32 =  dcache_st_data[31:0];
+import "DPI-C" function void tohost_handler(input reg we, input int address, input int data_o, input reg req_valid, input reg req_ready);
+always@(negedge clk) begin
+    tohost_handler(dcache_opcode, dcache_req_addr, datalow32, dcache_req_valid, dcache_req_ready);
+end
+`endif
+
+
 wire [31:0] data_dout1;
 wire [7:0] okk0 = 8'b0;
 wire okk1 = 1;
-//   sky130_fd_sc_hd__conb_1 okk1 (
-//     .LO(okk1)
-//   );
+
 
 // cache <-> core_empty / arbitor
 wire icache_req_valid;
@@ -134,6 +141,8 @@ wire [3:0] dcache_write_data_mask_2;
 wire [7:0] dcache_data_index_2;
 wire [31:0] dcache_data_in_2;
 wire [31:0] dcache_data_out_2;
+
+// wire IPC_commit_check;
 
 assign m3_wbd_sel_o = 4'b0;
 
@@ -414,5 +423,4 @@ sky130_sram_1kbyte_1rw1r_32x256_8  dcache_data_ram_2 (
                             .csb1 (okk1),
                             .addr1 (okk0),
                             .dout1 (data_dout1));  
-/* verilator lint_on BLKANDNBLK */
 endmodule

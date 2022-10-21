@@ -41,8 +41,13 @@ module core_empty #(
 
     // CSR interupt controller
     input meip
-
 );
+`ifdef CALCULATING_IPC
+import "DPI-C" function void commit_check_forIPC(input reg a);
+always@(negedge clk) begin
+    commit_check_forIPC(back2exp_cm_valid);
+end
+`endif
 
 wire [LSU_LSQ_SIZE_WIDTH - 1:0] back2dcache_lsq_index;
 assign back2dcache_lsq_index_o = back2dcache_lsq_index;

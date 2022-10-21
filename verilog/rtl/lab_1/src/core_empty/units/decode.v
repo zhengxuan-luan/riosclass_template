@@ -138,7 +138,7 @@ wire [VIR_REG_ADDR_WIDTH-1:0] rs2_address;
             uses_rs1_w = 1;
             uses_csr_w = 1;
           end
-          3'b101: begin  // CSRRWI
+          3'b101: begin  // CSRWI
             uses_rs1_w = 0;
             uses_csr_w = 1 && (rd_address != 0);
           end

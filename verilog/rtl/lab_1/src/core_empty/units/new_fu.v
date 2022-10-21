@@ -412,23 +412,6 @@ nblsu fu_lsu(
         $display("alu_next_pc: %h", alu_next_pc);
         $display("alu_wb_data_o: %h", alu_wb_data_o);
         
-        
-
-        // $display("alu_done_o: %h",alu_done_o );
-        // $display("alu_wb_rob_index_o: %h", alu_wb_rob_index_o);
-        // $display("alu_wb_valid_o: %h", alu_wb_valid_o);
-        // $display("alu_wb_rd_addr_o: %h", alu_wb_rd_addr_o);
-        // $display("alu_wb_data_o: %h", alu_wb_data_o);
-        // $display("alu_done_o: %h",alu_done_o );
-        // $display("alu_done: %h", alu_done);
-        // $display("csr_valid: %h", csr_valid);
-        // $display("csr_read: %h", csr_read);
-        // $display(": %h", );
-        // $display(": %h", );
-        // $display(": %h", );
-        // $display(": %h", );
-        // $display(": %h", );
-        // $display(": %h", );
     end 
 `endif //LSU_ALU_SELFCHECK
 endmodule

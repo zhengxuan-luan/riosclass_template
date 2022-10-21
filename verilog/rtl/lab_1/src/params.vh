@@ -3,6 +3,9 @@
 // MACROS
 // `define LSU_SELFCHECK   
 // `define LSU_ALU_SELFCHECK
+// `define CALCULATING_IPC
+// `define COSIM
+// `define EXITER
 `define USE_NBLSU
 
 `define va_vpn0 20:12

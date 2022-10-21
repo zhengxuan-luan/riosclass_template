@@ -29,6 +29,16 @@ module physical_regfile #(
     input flush
 );
 
+`ifdef COSIM
+import "DPI-C" function void  preg_sync(input reg alu_valid, input reg lsu_valid, input longint alu_data_in, input longint lsu_data_in, input int alu_address, input int lsu_address);
+
+wire [31:0] addr1 = {{26{1'b0}}, prd_address_alu};
+wire [31:0] addr2 = {{26{1'b0}}, prd_address_lsu};
+always@(negedge clk) begin
+    preg_sync(alu_valid, lsu_valid, prd_data_alu, prd_data_lsu, addr1, addr2);
+end
+`endif
+
     reg [63:0] registers [0:REG_SIZE-1];
     reg registers_p [0:REG_SIZE-1];
     integer i;

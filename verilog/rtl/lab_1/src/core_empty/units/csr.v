@@ -44,6 +44,15 @@ module csr #(
     output [VIRTUAL_ADDR_LEN-1:0] mret_vector // mepc内的原pc
 );
 
+`ifdef COSIM
+import "DPI-C" function void csr_monitor(input int address, input reg csr_write_valid, input longint write_data);
+
+wire [31:0] addr_extend = {{20{1'b0}}, write_address};
+always@(negedge clk) begin
+    csr_monitor(addr_extend, write_enable, write_data);
+end
+`endif
+
 reg [XLEN - 1:0] cycle = 0;
 reg [XLEN - 1:0] instret = 0;
 reg pie = 0;

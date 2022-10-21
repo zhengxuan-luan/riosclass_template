@@ -68,7 +68,7 @@ module fifo_tmp #(
     assign cnt_cmp_equal = wr_line == rd_line;
 
     always @(*) begin
-        fifo_full = fifo_num == FIFO_SIZE;
+        fifo_full = (fifo_num == (FIFO_SIZE - 1));  // 没有充分利用fifo容量，差一个
     end
 
     always @(*) begin

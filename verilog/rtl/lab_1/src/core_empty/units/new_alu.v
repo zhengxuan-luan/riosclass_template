@@ -96,9 +96,9 @@ always @(*) begin
     jump_w = jump_i & valid_i;
     branch_w = branch_i & valid_i;
     //cmp result(wire)
-    less = cmp_function_select[2];
-    usign = cmp_function_select[1];
-    negate = cmp_function_select[0];
+    less = cmp_function_select[2];   // 小于或者大于
+    usign = cmp_function_select[1];  //unsigned
+    negate = cmp_function_select[0]; // 语义相反
     is_equal = (cmp_input_a == cmp_input_b);
     is_less = ($signed({usign ? 1'b0 : cmp_input_a[63], cmp_input_a}) < $signed({usign ? 1'b0 : cmp_input_b[63], cmp_input_b}));
     quasi_result = less ? is_less : is_equal;
@@ -154,7 +154,7 @@ always @(posedge clk) begin
         branch_o <= branch_w;
         pc_o <= pc_i;
         next_pc_o <= next_pc_i;
-        csr_valid_o <= is_csr_i & valid_i;;
+        csr_valid_o <= is_csr_i & valid_i;
         csr_read_o <= csr_read_i;
         csr_write_o <= csr_write_i;
         csr_data_o <= csr_data_i;
