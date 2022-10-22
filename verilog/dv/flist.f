@@ -33,7 +33,7 @@
 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/core_empty.v
 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/bus_arbiter.v
 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/hehe.v
-
+/work/stu/zxluan/RIOS_lab/riosclass_template/co-sim/cosim.cpp
 ./dpram64.sv
 ./wb_arb.sv
 ./wb_interconnect.sv

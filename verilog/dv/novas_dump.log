@@ -156,7 +156,7 @@ SYNOPSYS_HOME=/opt/cad/synopsys/installs
 CAML_LD_LIBRARY_PATH=/work/home/zxluan/.opam/ocaml-base-compiler.4.06.1/lib/stublibs:/work/home/zxluan/.opam/ocaml-base-compiler.4.06.1/lib/ocaml/stublibs:/work/home/zxluan/.opam/ocaml-base-compiler.4.06.1/lib/ocaml
 MPI_INCLUDE=/usr/include/mpich-3.2-x86_64
 MANPATH=/usr/share/man/mpich-3.2:/usr/share/man:/usr/local/share/man:/work/home/zxluan/.opam/ocaml-base-compiler.4.06.1/man
-XDG_SESSION_ID=15224
+XDG_SESSION_ID=15902
 QRC_HOME=/opt/cad/cadence/installs/QUANTUS201
 LC_MONETARY=en_US.UTF-8
 HOSTNAME=server1
@@ -165,12 +165,12 @@ SHELL=/bin/bash
 OA_LINK_DIR=/work/tools/cadence/installs/ICADVM201/oa_v22.60.043
 HISTSIZE=1000
 MAKEFLAGS=
-SSH_CLIENT=10.11.230.144 65038 22
+SSH_CLIENT=10.11.230.150 52191 22
 LC_NUMERIC=en_US.UTF-8
 QTDIR=/usr/lib64/qt-3.3
 OPAM_SWITCH_PREFIX=/work/home/zxluan/.opam/ocaml-base-compiler.4.06.1
 QTINC=/usr/lib64/qt-3.3/include
-SSH_TTY=/dev/pts/157
+SSH_TTY=/dev/pts/146
 QT_GRAPHICSSYSTEM_CHECKED=1
 OCAML_TOPLEVEL_PATH=/work/home/zxluan/.opam/ocaml-base-compiler.4.06.1/lib/toplevel
 MPI_PYTHON_SITEARCH=/usr/lib64/python2.7/site-packages/mpich-3.2
@@ -178,7 +178,7 @@ USER=zxluan
 LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=01;05;37;41:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.axv=01;35:*.anx=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=01;36:*.au=01;36:*.flac=01;36:*.mid=01;36:*.midi=01;36:*.mka=01;36:*.mp3=01;36:*.mpc=01;36:*.ogg=01;36:*.ra=01;36:*.wav=01;36:*.axa=01;36:*.oga=01;36:*.spx=01;36:*.xspf=01;36:
 LD_LIBRARY_PATH=/work/stu/zxluan/.gmp/lib:/usr/lib64/mpich-3.2/lib
 OPENSOURCE_HOME=/opt/cad/opensource/installs
-MAKE_TERMOUT=/dev/pts/157
+MAKE_TERMOUT=/dev/pts/146
 ANSYS_HOME=/opt/cad/ansys
 MAKELEVEL=1
 MPI_LIB=/usr/lib64/mpich-3.2/lib
@@ -209,9 +209,9 @@ MPI_SUFFIX=_mpich-3.2
 MPI_MAN=/usr/share/man/mpich-3.2
 PYTHONPATH=/usr/lib64/python2.7/site-packages/mpich-3.2
 LOGNAME=zxluan
-MAKE_TERMERR=/dev/pts/157
+MAKE_TERMERR=/dev/pts/146
 QTLIB=/usr/lib64/qt-3.3/lib
-SSH_CONNECTION=10.11.230.144 65038 10.8.6.4 22
+SSH_CONNECTION=10.11.230.150 52191 10.8.6.4 22
 XDG_DATA_DIRS=/work/stu/zxluan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 CAD_HOME=/opt/cad
 MODULESHOME=/usr/share/Modules
@@ -221,7 +221,7 @@ LESSOPEN=||/usr/bin/lesspipe.sh %s
 SPECMAN_DIR=/opt/cadence/INCISIVE151/components/sn/
 PKG_CONFIG_PATH=/work/home/zxluan/.opam/ocaml-base-compiler.4.06.1/lib/pkgconfig:/work/stu/zxluan/.gmp/lib/pkgconfig:/usr/lib64/mpich-3.2/lib/pkgconfig
 XDG_RUNTIME_DIR=/run/user/10201
-DISPLAY=localhost:34.0
+DISPLAY=localhost:19.0
 XILINX_HOME=/opt/cad/xilinx/installs
 LC_TIME=en_US.UTF-8
 INCISIVDIR=/opt/cadence/INCISIVE151
@@ -239,8 +239,8 @@ Runtime command line arguments:
 argv[0]=./simv
 argv[1]=+dump
 239 profile - 100
-          CPU/Mem usage: 0.070 sys,  0.410 user,  285.39M mem
-240 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
+          CPU/Mem usage: 0.080 sys,  0.410 user,  281.19M mem
+240 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
 241 pliAppInit
 242 FSDB_GATE is set.
 243 FSDB_RTL is set.
@@ -254,140 +254,139 @@ argv[1]=+dump
 251 (C) 1996 - 2020 by Synopsys, Inc.
 252 sps_call_fsdbDumpfile_main at 0 : ./hehe_tb.sv(22)
 253 argv[0]: (./logs/waves.fsdb)
-254 *Verdi* FSDB WARNING: The FSDB file already exists. Overwriting the FSDB file may crash the programs that are using this file.
-255 *Verdi* : Create FSDB file './logs/waves.fsdb'
-256 compile option from '/work/stu/zxluan/RIOS_lab/riosclass_template/verilog/dv/simv.daidir/vcs_rebuild'.
-257   "vcs '+vcs+lic+wait' '-sverilog' '-kdb' '+vc+list' '+vpi' '+error+20' '+lint=TFIPC-L' '+lint=IIMW-L' '+lint=GCWM-L' '+lint=CAWM-L' '+lint=PCWM-L' '-full64' '-F' 'flist.f' '-top' 'hehe_tb' '-timescale=1ns/1ps' '-v2k_generate' '-debug_access+all' 2>&1"
-258 DVDI_is_vir_unload_enabled is enable
-259 FSDB_VCS_ENABLE_NATIVE_VC is enable
-260 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(23)
-261 argv[0]: (0)
-262 argv[1]: (handle) hehe_tb
-263 [spi_vcs_vd_ppi_create_root]: no upf option
-264 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
-265 Power dumping is enabled and VIR_REDUCTION may not work.
-266 *Verdi* : Begin traversing the scope (hehe_tb), layer (0).
-267 *Verdi* : End of traversing.
-268 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.090 sys,  0.430 user,  402.49M mem
-                   incr: 0.010 sys,  0.020 user,  24.82M mem
-                   accu: 0.010 sys,  0.020 user,  24.82M mem
-              accu incr: 0.010 sys,  0.020 user,  24.82M mem
+254 *Verdi* : Create FSDB file './logs/waves.fsdb'
+255 compile option from '/work/stu/zxluan/RIOS_lab/riosclass_template/verilog/dv/simv.daidir/vcs_rebuild'.
+256   "vcs '+vcs+lic+wait' '-sverilog' '-kdb' '+vc+list' '+vpi' '+error+20' '+lint=TFIPC-L' '+lint=IIMW-L' '+lint=GCWM-L' '+lint=CAWM-L' '+lint=PCWM-L' '-full64' '-F' 'flist.f' '-top' 'hehe_tb' '-timescale=1ns/1ps' '-v2k_generate' '-debug_access+all' 2>&1"
+257 DVDI_is_vir_unload_enabled is enable
+258 FSDB_VCS_ENABLE_NATIVE_VC is enable
+259 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(23)
+260 argv[0]: (0)
+261 argv[1]: (handle) hehe_tb
+262 [spi_vcs_vd_ppi_create_root]: no upf option
+263 FSDB dumper cannot dump UPF related power signal ($power_tree): no ppiPowerNetwork.
+264 Power dumping is enabled and VIR_REDUCTION may not work.
+265 *Verdi* : Begin traversing the scope (hehe_tb), layer (0).
+266 *Verdi* : End of traversing.
+267 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.090 sys,  0.440 user,  398.28M mem
+                   incr: 0.000 sys,  0.020 user,  24.82M mem
+                   accu: 0.000 sys,  0.020 user,  24.82M mem
+              accu incr: 0.000 sys,  0.020 user,  24.82M mem
 
-          Count usage: 1969 var,  1070 idcode,  425 callback
-                 incr: 1969 var,  1070 idcode,  425 callback
-                 accu: 1969 var,  1070 idcode,  425 callback
-            accu incr: 1969 var,  1070 idcode,  425 callback
-269 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-270 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.090 sys,  0.430 user,  403.54M mem
+          Count usage: 1979 var,  1080 idcode,  431 callback
+                 incr: 1979 var,  1080 idcode,  431 callback
+                 accu: 1979 var,  1080 idcode,  431 callback
+            accu incr: 1979 var,  1080 idcode,  431 callback
+268 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+269 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.090 sys,  0.440 user,  399.33M mem
                    incr: 0.000 sys,  0.000 user,  1.05M mem
-                   accu: 0.010 sys,  0.020 user,  25.87M mem
+                   accu: 0.000 sys,  0.020 user,  25.87M mem
               accu incr: 0.000 sys,  0.000 user,  1.05M mem
 
-          Count usage: 1969 var,  1070 idcode,  425 callback
+          Count usage: 1979 var,  1080 idcode,  431 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 1969 var,  1070 idcode,  425 callback
+                 accu: 1979 var,  1080 idcode,  431 callback
             accu incr: 0 var,  0 idcode,  0 callback
-271 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-272 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(24)
-273 argv[0]: (+struct)
-274 *Verdi* : Begin traversing the scopes, layer (0).
-275 *Verdi* : Enable +struct dumping.
-276 *Verdi* : End of traversing.
-277 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.090 sys,  0.440 user,  403.54M mem
+270 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+271 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(24)
+272 argv[0]: (+struct)
+273 *Verdi* : Begin traversing the scopes, layer (0).
+274 *Verdi* : Enable +struct dumping.
+275 *Verdi* : End of traversing.
+276 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.090 sys,  0.440 user,  399.33M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 3997 var,  1119 idcode,  437 callback
+                 incr: 2018 var,  39 idcode,  6 callback
+                 accu: 2018 var,  39 idcode,  6 callback
+            accu incr: 2018 var,  39 idcode,  6 callback
+277 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+278 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.090 sys,  0.440 user,  399.33M mem
+                   incr: 0.000 sys,  0.000 user,  0.00M mem
+                   accu: 0.000 sys,  0.000 user,  0.00M mem
+              accu incr: 0.000 sys,  0.000 user,  0.00M mem
+
+          Count usage: 3997 var,  1119 idcode,  437 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 2018 var,  39 idcode,  6 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+279 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+280 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(25)
+281 argv[0]: (+mda)
+282 *Verdi* : Begin traversing the scopes, layer (0).
+283 *Verdi* : Enable +mda dumping.
+284 *Verdi* : End of traversing.
+285 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.090 sys,  0.450 user,  399.64M mem
+                   incr: 0.000 sys,  0.010 user,  0.31M mem
+                   accu: 0.000 sys,  0.010 user,  0.31M mem
+              accu incr: 0.000 sys,  0.010 user,  0.31M mem
+
+          Count usage: 15725 var,  10868 idcode,  472 callback
+                 incr: 11728 var,  9749 idcode,  35 callback
+                 accu: 11728 var,  9749 idcode,  35 callback
+            accu incr: 11728 var,  9749 idcode,  35 callback
+286 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+287 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.090 sys,  0.450 user,  399.91M mem
+                   incr: 0.000 sys,  0.000 user,  0.27M mem
+                   accu: 0.000 sys,  0.010 user,  0.58M mem
+              accu incr: 0.000 sys,  0.000 user,  0.27M mem
+
+          Count usage: 15725 var,  10868 idcode,  472 callback
+                 incr: 0 var,  0 idcode,  0 callback
+                 accu: 11728 var,  9749 idcode,  35 callback
+            accu incr: 0 var,  0 idcode,  0 callback
+288 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+289 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(26)
+290 argv[0]: (+all)
+291 *Verdi* : Begin traversing the scopes, layer (0).
+292 *Verdi* : Enable +all dumping.
+293 *Verdi* : End of traversing.
+294 pliAppHDL_DumpVarComplete traverse var: profile - 
+          CPU/Mem usage: 0.090 sys,  0.460 user,  399.91M mem
                    incr: 0.000 sys,  0.010 user,  0.00M mem
                    accu: 0.000 sys,  0.010 user,  0.00M mem
               accu incr: 0.000 sys,  0.010 user,  0.00M mem
 
-          Count usage: 3977 var,  1109 idcode,  431 callback
-                 incr: 2008 var,  39 idcode,  6 callback
-                 accu: 2008 var,  39 idcode,  6 callback
-            accu incr: 2008 var,  39 idcode,  6 callback
-278 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-279 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.090 sys,  0.440 user,  403.54M mem
+          Count usage: 27492 var,  10868 idcode,  472 callback
+                 incr: 11767 var,  0 idcode,  0 callback
+                 accu: 11767 var,  0 idcode,  0 callback
+            accu incr: 11767 var,  0 idcode,  0 callback
+295 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+296 pliAppHDL_DumpVarComplete: profile - 
+          CPU/Mem usage: 0.090 sys,  0.460 user,  399.91M mem
                    incr: 0.000 sys,  0.000 user,  0.00M mem
                    accu: 0.000 sys,  0.010 user,  0.00M mem
               accu incr: 0.000 sys,  0.000 user,  0.00M mem
 
-          Count usage: 3977 var,  1109 idcode,  431 callback
+          Count usage: 27492 var,  10868 idcode,  472 callback
                  incr: 0 var,  0 idcode,  0 callback
-                 accu: 2008 var,  39 idcode,  6 callback
+                 accu: 11767 var,  0 idcode,  0 callback
             accu incr: 0 var,  0 idcode,  0 callback
-280 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-281 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(25)
-282 argv[0]: (+mda)
-283 *Verdi* : Begin traversing the scopes, layer (0).
-284 *Verdi* : Enable +mda dumping.
-285 *Verdi* : End of traversing.
-286 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.090 sys,  0.440 user,  403.85M mem
-                   incr: 0.000 sys,  0.000 user,  0.31M mem
-                   accu: 0.000 sys,  0.000 user,  0.31M mem
-              accu incr: 0.000 sys,  0.000 user,  0.31M mem
-
-          Count usage: 15695 var,  10858 idcode,  466 callback
-                 incr: 11718 var,  9749 idcode,  35 callback
-                 accu: 11718 var,  9749 idcode,  35 callback
-            accu incr: 11718 var,  9749 idcode,  35 callback
-287 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-288 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.090 sys,  0.450 user,  404.13M mem
-                   incr: 0.000 sys,  0.010 user,  0.28M mem
-                   accu: 0.000 sys,  0.010 user,  0.59M mem
-              accu incr: 0.000 sys,  0.010 user,  0.28M mem
-
-          Count usage: 15695 var,  10858 idcode,  466 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 11718 var,  9749 idcode,  35 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-289 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-290 sps_call_fsdbDumpvars_vd_main at 0 : ./hehe_tb.sv(26)
-291 argv[0]: (+all)
-292 *Verdi* : Begin traversing the scopes, layer (0).
-293 *Verdi* : Enable +all dumping.
-294 *Verdi* : End of traversing.
-295 pliAppHDL_DumpVarComplete traverse var: profile - 
-          CPU/Mem usage: 0.090 sys,  0.450 user,  404.13M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 27452 var,  10858 idcode,  466 callback
-                 incr: 11757 var,  0 idcode,  0 callback
-                 accu: 11757 var,  0 idcode,  0 callback
-            accu incr: 11757 var,  0 idcode,  0 callback
-296 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-297 pliAppHDL_DumpVarComplete: profile - 
-          CPU/Mem usage: 0.090 sys,  0.450 user,  404.13M mem
-                   incr: 0.000 sys,  0.000 user,  0.00M mem
-                   accu: 0.000 sys,  0.000 user,  0.00M mem
-              accu incr: 0.000 sys,  0.000 user,  0.00M mem
-
-          Count usage: 27452 var,  10858 idcode,  466 callback
-                 incr: 0 var,  0 idcode,  0 callback
-                 accu: 11757 var,  0 idcode,  0 callback
-            accu incr: 0 var,  0 idcode,  0 callback
-298 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-299 sps_call_fsdbDumpon_vd_main at 0 : ./hehe_tb.sv(27)
-300 *Verdi* : fsdbDumpon - All FSDB files at 0 ps.
-301 End of simulation at 59930000
-302 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-303 Begin FSDB profile info:
-304 FSDB Writer : bc1(54136) bcn(136640) mtf/stf(0/0)
-FSDB Writer elapsed time : flush(0.027002) io wait(0.000000) theadpool wait(0.000000)
+297 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+298 sps_call_fsdbDumpon_vd_main at 0 : ./hehe_tb.sv(27)
+299 *Verdi* : fsdbDumpon - All FSDB files at 0 ps.
+300 End of simulation at 59930000
+301 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+302 Begin FSDB profile info:
+303 FSDB Writer : bc1(54188) bcn(139161) mtf/stf(0/0)
+FSDB Writer elapsed time : flush(0.032012) io wait(0.000000) theadpool wait(0.000000)
 FSDB Writer cpu time : MT Compression : 0
-305 End FSDB profile info
-306 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
-307                      - BlockUsed:3 Acquire:149282 BufferUsed:2479325
-308                      - Flush:7 Expand:0 ProducerWait:0 ConsumerWait:0
-309                      - MainProducerTime:0.672292345 TotalConsumerTime:0.024372969
-310                      - ElapsedTime:0.246618000
-311 Producer   0 profile - BlockUsed:3 Acquire:149282 BufferUsed:2479325
-312 Consumer   0 profile - Affinity:-1 CPUTime:0.024372969 LifeTime:0.024410207 (1.00%)
-313                      - BlockUsed:3 Acquire:149282 BufferUsed:2479325
-314 SimExit
-315 Elapsed time:    0:00:02    Sat Oct 22 01:28:25 2022
-316 Sim process exit
+304 End FSDB profile info
+305 Parallel profile     - ProducerThread:1 ConsumerThread:1 Buffer:64MB
+306                      - BlockUsed:3 Acquire:151831 BufferUsed:2519829
+307                      - Flush:7 Expand:0 ProducerWait:0 ConsumerWait:1
+308                      - MainProducerTime:0.701909850 TotalConsumerTime:0.020882965
+309                      - ElapsedTime:0.280167000
+310 Producer   0 profile - BlockUsed:3 Acquire:151831 BufferUsed:2519829
+311 Consumer   0 profile - Affinity:-1 CPUTime:0.020882965 LifeTime:0.029861708 (0.70%)
+312                      - BlockUsed:3 Acquire:151831 BufferUsed:2519829
+313 SimExit
+314 Elapsed time:    0:00:02    Sun Oct 23 01:43:09 2022
+315 Sim process exit

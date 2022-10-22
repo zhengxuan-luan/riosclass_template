@@ -51,7 +51,7 @@ flist.f
 70
 _LMFILES_=/etc/modulefiles/mpi/mpich-3.2-x86_64
 XILINX_HOME=/opt/cad/xilinx/installs
-XDG_SESSION_ID=15224
+XDG_SESSION_ID=15902
 XDG_RUNTIME_DIR=/run/user/10201
 XDG_DATA_DIRS=/work/stu/zxluan/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
 VRST_HOME=/opt/cadence/INCISIVE151
@@ -66,9 +66,9 @@ VCS_ARCH=linux64
 UNAME=/bin/uname
 TOOL_HOME=/opt/cad/synopsys/installs/vcs/Q-2020.03-SP2/linux64
 SYNOPSYS_HOME=/opt/cad/synopsys/installs
-SSH_TTY=/dev/pts/157
-SSH_CONNECTION=10.11.230.144 65038 10.8.6.4 22
-SSH_CLIENT=10.11.230.144 65038 22
+SSH_TTY=/dev/pts/146
+SSH_CONNECTION=10.11.230.150 52191 10.8.6.4 22
+SSH_CLIENT=10.11.230.150 52191 22
 SPECMAN_HOME=/opt/cadence/INCISIVE151/components/sn
 SPECMAN_DIR=/opt/cadence/INCISIVE151/components/sn/
 SNPS_VERDI_INTERNAL_LP_XML_NEW_FLOW=1
@@ -100,8 +100,8 @@ MPI_BIN=/usr/lib64/mpich-3.2/bin
 MODULESHOME=/usr/share/Modules
 MODULEPATH=/usr/share/Modules/modulefiles:/etc/modulefiles
 MFLAGS=
-MAKE_TERMOUT=/dev/pts/157
-MAKE_TERMERR=/dev/pts/157
+MAKE_TERMOUT=/dev/pts/146
+MAKE_TERMERR=/dev/pts/146
 MAKELEVEL=1
 MAKEFLAGS=
 LOADEDMODULES=mpi/mpich-3.2-x86_64
@@ -121,7 +121,7 @@ BASH_FUNC_module()=() {  eval `/usr/bin/modulecmd bash $*`_}
 ANSYS_HOME=/opt/cad/ansys
 0
 41
-1666321885 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/params.vh
+1666425248 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/params.vh
 1666373276 ./hehe_tb.sv
 1666357223 ./wb_interconnect.sv
 1666357223 ./wb_arb.sv
@@ -131,7 +131,7 @@ ANSYS_HOME=/opt/cad/ansys
 1666321751 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/core_empty.v
 1666360303 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/pipeline/backend.v
 1666360303 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/pipeline/frontend.v
-1666360303 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/units/rcu.v
+1666460093 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/units/rcu.v
 1666321751 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/units/physical_regfile.v
 1666360303 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/units/new_fu.v
 1666321751 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/core_empty/units/new_alu.v
@@ -159,7 +159,7 @@ ANSYS_HOME=/opt/cad/ansys
 1666321751 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/cache/cacheblock/sky130_sram_1rw1r_64x256_8.v
 1666321751 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/cache/cacheblock/std_dffe.v
 1666321751 /work/stu/zxluan/RIOS_lab/riosclass_template/verilog/rtl/lab_1/src/cache/cacheblock/std_dffr.v
-1666370948 flist.f
+1666460555 flist.f
 1602321813 /opt/cad/synopsys/installs/verdi/Q-2020.03-SP2/share/PLI/VCS/LINUX64/verdi.tab
 1602321640 /opt/cad/synopsys/installs/vcs/Q-2020.03-SP2/linux64/lib/vcsdp_lite.tab
 4
@@ -167,5 +167,5 @@ ANSYS_HOME=/opt/cad/ansys
 1602321632 /opt/cad/synopsys/installs/vcs/Q-2020.03-SP2/linux64/lib/liberrorinf.so
 1602321640 /opt/cad/synopsys/installs/vcs/Q-2020.03-SP2/linux64/lib/libsnpsmalloc.so
 1602321632 /opt/cad/synopsys/installs/vcs/Q-2020.03-SP2/linux64/lib/libvfs.so
-1666373301 simv.daidir
+1666460579 simv.daidir
 -1 partitionlib

@@ -4,4 +4,4 @@ uname(Linux server1 3.10.0-1160.el7.x86_64 #1 SMP Mon Oct 19 16:18:59 UTC 2020 x
 [INFO] error/warning message 'C00381' has been suppressed.
 [INFO] error/warning message 'C00388' has been suppressed.
 [INFO] error/warning message 'C00389' has been suppressed.
-au time 0.289759 0.062981 0.042909 delta 97165312 97165312 total 205676544 205676544
+au time 0.262338 0.051770 0.039567 delta 97136640 97136640 total 205647872 205647872
