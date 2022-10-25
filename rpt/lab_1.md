@@ -19,5 +19,17 @@ The verification environment is located at **./verilog/dv**.
 ![](./images/hehe-log.png)
 ### Open EDA flow
 1. SKY130A synthesis
-    **./backend_log/RUN_1** records the GreenRio synthesis flow under <u>sky130_fd_sc_hd__ff_100C_1v65.lib</u> corner.  
-    
+    **./backend_log/RUN_1** records the GreenRio synthesis flow.
+    the corner constraint is as follows:
+    ```
+    set ::env(LIB_SYNTH) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_fd_sc_hd__tt_025C_1v80.lib"
+    set ::env(LIB_FASTEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+    set ::env(LIB_SLOWEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+    ``` 
+    **./backend_log/RUN_2** records the GreenRio synthesis flow.
+    the corner constraint is as follows: 
+    ```
+    set ::env(LIB_SYNTH) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/ssky130_fd_sc_hd__ff_100C_1v65.lib"
+    set ::env(LIB_FASTEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib"
+    set ::env(LIB_SLOWEST) "$::env(PDK_ROOT)/$::env(PDK)/libs.ref/$::env(STD_CELL_LIBRARY)/lib/sky130_fd_sc_hd__ss_100C_1v60.lib"
+    ``` 

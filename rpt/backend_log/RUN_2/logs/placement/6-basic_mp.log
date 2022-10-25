@@ -1,0 +1,44 @@
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO MPL-0005] Found 5 macros.
+[WARNING MPL-0002] Some instances do not have Liberty models. TritonMP will place macros without connection information.
+[INFO MPL-0069] Initial weighted wire length 37283.
+Begin one level partition.
+[INFO MPL-0076] Partition 5 macros.
+[INFO MPL-0077] Using 2 cut lines.
+[INFO MPL-0079] Cut line 5.52.
+[INFO MPL-0079] Cut line 1751.22.
+End one level partition.
+Begin horizontal partition.
+Begin east partition.
+[INFO MPL-0076] Partition 0 macros.
+[INFO MPL-0077] Using 0 cut lines.
+End east partition.
+Begin west partition.
+[INFO MPL-0076] Partition 5 macros.
+[INFO MPL-0077] Using 2 cut lines.
+[INFO MPL-0079] Cut line 10.88.
+[INFO MPL-0079] Cut line 1754.40.
+End west partition.
+End horizontal partition.
+Begin horizontal partition.
+Begin east partition.
+[INFO MPL-0076] Partition 5 macros.
+[INFO MPL-0077] Using 2 cut lines.
+[INFO MPL-0079] Cut line 10.88.
+[INFO MPL-0079] Cut line 1754.40.
+End east partition.
+Begin west partition.
+[INFO MPL-0076] Partition 0 macros.
+[INFO MPL-0077] Using 0 cut lines.
+End west partition.
+End horizontal partition.
+[INFO MPL-0070] Using 4 partition sets.
+[INFO MPL-0071] Solution 1 weighted wire length 34502.6.
+[INFO MPL-0071] Solution 2 weighted wire length 34503.9.
+[INFO MPL-0071] Solution 3 weighted wire length 34502.1.
+[INFO MPL-0071] Solution 4 weighted wire length 34503.4.
+[INFO MPL-0073] Best weighted wire length 34503.9.
+Writing OpenROAD database to /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/tmp/placement/6-macros_placed.odb...
+Writing layout to /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/tmp/placement/6-macros_placed.def...

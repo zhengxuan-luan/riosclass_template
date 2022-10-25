@@ -6,6 +6,5 @@
 *.lst
 *.vcd
 *.gtkw
-OpenLane
 dc_result
 caravel

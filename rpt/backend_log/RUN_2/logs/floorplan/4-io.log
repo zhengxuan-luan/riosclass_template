@@ -1,0 +1,13 @@
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[WARNING PPL-0015] Macro dcache_data_ram_1 is not placed.
+[WARNING PPL-0015] Macro dcache_data_ram_2 is not placed.
+[WARNING PPL-0015] Macro dcache_tag_ram is not placed.
+[WARNING PPL-0015] Macro icache_data_ram is not placed.
+[WARNING PPL-0015] Macro icache_tag_ram is not placed.
+Found 0 macro blocks.
+Using 1u default distance from corners.
+[INFO PPL-0007] Random pin placement.
+Writing OpenROAD database to /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/tmp/floorplan/4-io.odb...
+Writing layout to /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/tmp/floorplan/4-io.def...

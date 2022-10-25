@@ -1,0 +1,21 @@
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO ODB-0222] Reading LEF file: /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/tmp/merged.nom.lef
+[WARNING ODB-0220] WARNING (LEFPARS-2036): SOURCE statement is obsolete in version 5.6 and later.
+The LEF parser will ignore this statement.
+To avoid this warning in the future, remove this statement from the LEF file with version 5.6 or later. See file /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/tmp/merged.nom.lef at line 930.
+
+[INFO ODB-0223]     Created 13 technology layers
+[INFO ODB-0224]     Created 25 technology vias
+[INFO ODB-0225]     Created 442 library cells
+[INFO ODB-0226] Finished LEF file:  /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/tmp/merged.nom.lef
+Reading netlist...
+[WARNING ORD-1011] LEF master sky130_sram_1kbyte_1rw1r_32x256_8 has no liberty cell.
+[INFO IFP-0001] Added 641 rows of 3795 sites.
+[INFO IFP-0030] Inserted 0 tiecells using sky130_fd_sc_hd__conb_1/LO.
+[INFO IFP-0030] Inserted 0 tiecells using sky130_fd_sc_hd__conb_1/HI.
+[INFO] Extracting DIE_AREA and CORE_AREA from the floorplan
+[INFO] Floorplanned on a die area of 0.0 0.0 1757.185 1767.905 (microns). Saving to /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/reports/floorplan/3-initial_fp_die_area.rpt.
+[INFO] Floorplanned on a core area of 5.52 10.88 1751.22 1754.4 (microns). Saving to /openlane/designs/lab1/runs/RUN_2022.10.25_06.07.34/reports/floorplan/3-initial_fp_core_area.rpt.
+[WARNING] Did not save OpenROAD database!

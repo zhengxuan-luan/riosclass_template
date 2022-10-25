@@ -1,0 +1,44 @@
+OpenROAD 4174c3ad802d2ac1d04d387d2c4b883903f6647e 
+This program is licensed under the BSD-3 license. See the LICENSE file for details.
+Components of this program may be licensed under more restrictive licenses which must be honored.
+[INFO]: Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO]: Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 1554 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 26
+[INFO GRT-0003] Macros: 5
+[INFO GRT-0004] Blockages: 143308
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal    1300480        521859          59.87%
+met2       Vertical       975360        450083          53.85%
+met3       Horizontal     650240        314547          51.63%
+met4       Vertical       390144        176775          54.69%
+met5       Horizontal     130048         64768          50.20%
+---------------------------------------------------------------
+
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[WARNING GRT-0227] Reached 20 congestion iterations with less than 15% of reduction between iterations.
+[INFO GRT-0197] Via related to pin nodes: 304637
+[INFO GRT-0198] Via related Steiner nodes: 17505
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 473909
+[INFO GRT-0112] Final usage 3D: 2461169
+[ERROR GRT-0118] Routing congestion too high. Check the congestion heatmap in the GUI.
+Error: resizer_routing_timing.tcl, 39 GRT-0118
