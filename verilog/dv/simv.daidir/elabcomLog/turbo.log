@@ -1,7 +1,7 @@
 Command Line: /opt/cad/synopsys/installs/vcs/Q-2020.03-SP2/linux64/bin/elabcom -logdir simv.daidir/elabcomLog -simvdaidir simv.daidir -lib simv.daidir/work -saveLevel -elab simv.daidir/kdb -simflow -simdir simv.daidir/kdb_libs -topfile simv.daidir/.elabcomTopFile -ssv -ssy -Lf work +disable_message+C00380+C00381 +disable_message+C00388+C00389
-uname(Linux server1 3.10.0-1160.71.1.el7.x86_64 #1 SMP Tue Jun 28 15:37:28 UTC 2022 x86_64)
+uname(Linux rios-cad5 3.10.0-1160.66.1.el7.x86_64 #1 SMP Wed May 18 16:02:34 UTC 2022 x86_64)
 [INFO] error/warning message 'C00380' has been suppressed.
 [INFO] error/warning message 'C00381' has been suppressed.
 [INFO] error/warning message 'C00388' has been suppressed.
 [INFO] error/warning message 'C00389' has been suppressed.
-au time 0.364659 0.074672 0.048705 delta 97140736 97140736 total 205660160 205660160
+au time 0.284221 0.045389 0.030259 delta 97136640 97136640 total 199409664 199409664

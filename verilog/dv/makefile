@@ -1,4 +1,5 @@
 default:
+	make -C /work/stu/zxluan/riosclass_template/co-sim
 	vcs +vcs+lic+wait -sverilog -kdb +vc+list +vpi\
 		+error+20 +lint=TFIPC-L +lint=IIMW-L +lint=GCWM-L +lint=CAWM-L \
 		+lint=PCWM-L -full64 -F flist.f -top hehe_tb -timescale=1ns/1ps \
