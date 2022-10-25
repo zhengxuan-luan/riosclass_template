@@ -105,6 +105,48 @@ __attribute__((weak)) void log_print(/* INPUT */unsigned char A_1, /* INPUT */in
 }
 #endif /* __VCS_IMPORT_DPI_STUB_log_print */
 
+#ifndef __VCS_IMPORT_DPI_STUB_get_log_handler
+#define __VCS_IMPORT_DPI_STUB_get_log_handler
+__attribute__((weak)) void get_log_handler()
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)() = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)()) dlsym(RTLD_NEXT, "get_log_handler");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_();
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "get_log_handler");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_get_log_handler */
+
+#ifndef __VCS_IMPORT_DPI_STUB_close_log
+#define __VCS_IMPORT_DPI_STUB_close_log
+__attribute__((weak)) void close_log()
+{
+    static int _vcs_dpi_stub_initialized_ = 0;
+    static void (*_vcs_dpi_fp_)() = NULL;
+    if (!_vcs_dpi_stub_initialized_) {
+        _vcs_dpi_fp_ = (void (*)()) dlsym(RTLD_NEXT, "close_log");
+        _vcs_dpi_stub_initialized_ = 1;
+    }
+    if (_vcs_dpi_fp_) {
+        _vcs_dpi_fp_();
+    } else {
+        const char *fileName;
+        int lineNumber;
+        svGetCallerInfo(&fileName, &lineNumber);
+        vcsMsgReport1("DPI-DIFNF", fileName, lineNumber, 0, 0, "close_log");
+    }
+}
+#endif /* __VCS_IMPORT_DPI_STUB_close_log */
+
 
 #ifdef __cplusplus
 }

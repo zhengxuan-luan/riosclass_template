@@ -37,6 +37,9 @@ wire [31:0] addr = hehe_u.dcache_req_addr;
 wire we = hehe_u.dcache_opcode;
 wire [31:0] data = hehe_u.dcache_st_data[31:0];
 
+import "DPI-C" function void get_log_handler();
+import "DPI-C" function void close_log();
+
 always @(posedge clk) begin  //exiter
     if(valid && ready && (addr == 32'h80001000) && we) begin
         if(data == 32'b1) begin
@@ -44,13 +47,17 @@ always @(posedge clk) begin  //exiter
         end else begin
             $display("fail test");
         end
+        close_log();
         $finish;
     end
 end
 
+
 initial begin
+    get_log_handler();
     repeat (10000) @(posedge clk);
     $display("time runout, simulating terminated");
+    close_log();
     $finish;
 end
 

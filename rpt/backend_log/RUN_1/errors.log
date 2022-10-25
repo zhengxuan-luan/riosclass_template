@@ -1,0 +1,16 @@
+[ERROR]: during executing openroad script /openlane/scripts/openroad/resizer_routing_timing.tcl
+[ERROR]: Log: designs/lab1/runs/RUN_2022.10.25_03.48.37/logs/routing/14-resizer.log
+[ERROR]: Last 10 lines:
+[INFO GRT-0101] Running extra iterations to remove overflow.
+[INFO GRT-0103] Extra Run for hard benchmark.
+[INFO GRT-0197] Via related to pin nodes: 300671
+[INFO GRT-0198] Via related Steiner nodes: 17179
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 511826
+[INFO GRT-0112] Final usage 3D: 2589158
+[ERROR GRT-0118] Routing congestion too high. Check the congestion heatmap in the GUI.
+Error: resizer_routing_timing.tcl, 39 GRT-0118
+child process exited abnormally
+
+[ERROR]: Creating issue reproducible...
+[ERROR]: Flow failed.

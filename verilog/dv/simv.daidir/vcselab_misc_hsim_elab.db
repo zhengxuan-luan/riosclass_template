@@ -1,6 +1,6 @@
 psSimBaseName                      	simv
 psLogFileName                      	NULL
-pDaiDir                            	/work/stu/zxluan/RIOS_lab/riosclass_template/verilog/dv/simv.daidir
+pDaiDir                            	/work/stu/zxluan/riosclass_template/verilog/dv/simv.daidir
 destPath                           	csrc/
 fSharedMaster                      	0
 fHsimPCSharedLibSpecified          	0

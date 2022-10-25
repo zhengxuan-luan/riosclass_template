@@ -5,3 +5,7 @@
 
  extern void log_print(/* INPUT */unsigned char co_commit, /* INPUT */int co_pc_in, /* INPUT */unsigned char co_store_in, /* INPUT */unsigned char co_fence, /* INPUT */unsigned char co_mret, /* INPUT */unsigned char co_wfi, /* INPUT */unsigned char co_uses_csr, /* INPUT */int co_rob_rd, /* INPUT */unsigned char co_csr_iss_ctrl, /* INPUT */int co_prf_name, 
 /* INPUT */int co_csr_address);
+
+ extern void get_log_handler();
+
+ extern void close_log();

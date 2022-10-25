@@ -10,12 +10,11 @@
 #include <signal.h>
 
 int preg [64] = {0};
+FILE* cosim_log = NULL;
+
 extern "C"{
-
-// FILE* cosim_log = "log.txt";
-// #define coprint(...) fprintf(cosim_log, __VA_ARGS__)
-#define coprint(...) printf(__VA_ARGS__)
-
+#define coprint(...) fprintf(cosim_log, __VA_ARGS__)
+// #define coprint(...) printf(__VA_ARGS__)
 //insert into phsical_regfile.v to sync preg in C++
 extern void preg_sync(svLogic alu_valid, svLogic lsu_valid, long long alu_data_in, long long lsu_data_in, int alu_address, int lsu_address){
     if(alu_valid & (alu_address != 0)){
@@ -27,6 +26,12 @@ extern void preg_sync(svLogic alu_valid, svLogic lsu_valid, long long alu_data_i
     preg[0] = 0;
 }
 
+extern void get_log_handler(){
+    cosim_log = fopen("greenrio_log.txt", "w+");
+}
+extern void close_log(){
+    fclose(cosim_log);
+}
 
 
 bool csr_monitor_read = false;  //当发射了一条csr指令时，当它在写csr的过程中就将其打印下来，这个必然是下个commit的结果

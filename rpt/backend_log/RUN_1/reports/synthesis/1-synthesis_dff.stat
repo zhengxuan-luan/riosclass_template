@@ -1,0 +1,27 @@
+
+49. Printing statistics.
+
+=== lab1 ===
+
+   Number of wires:              50236
+   Number of wire bits:          61247
+   Number of public wires:         652
+   Number of public wire bits:   11550
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:              60459
+     $_ANDNOT_                    3952
+     $_AND_                       3201
+     $_MUX_                      32892
+     $_NAND_                       289
+     $_NOR_                        779
+     $_NOT_                       4470
+     $_ORNOT_                      694
+     $_OR_                        3616
+     $_XNOR_                       198
+     $_XOR_                       1078
+     sky130_fd_sc_hd__dfxtp_2     9253
+     sky130_fd_sc_hd__dlxtn_1       32
+     sky130_sram_1kbyte_1rw1r_32x256_8      5
+

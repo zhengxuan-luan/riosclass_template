@@ -83,7 +83,7 @@ openlane: check-openlane-env
 		echo "Deleting exisiting $(OPENLANE_ROOT)" && \
 		rm -rf $(OPENLANE_ROOT) && sleep 2; \
 		fi
-	git clone https://github.com/The-OpenROAD-Project/OpenLane --branch=$(OPENLANE_TAG) --depth=1 $(OPENLANE_ROOT) && \
+	git clone git@github.com:The-OpenROAD-Project/OpenLane.git --branch=$(OPENLANE_TAG) --depth=1 $(OPENLANE_ROOT) && \
 		cd $(OPENLANE_ROOT) && \
 		export OPENLANE_IMAGE_NAME=efabless/openlane:$(OPENLANE_TAG) && \
 		export IMAGE_NAME=efabless/openlane:$(OPENLANE_TAG) && \

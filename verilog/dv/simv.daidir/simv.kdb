@@ -1,7 +1,7 @@
 rc file Version 1.0
 
 [Design]
-COMPILE_PATH=/work/stu/zxluan/RIOS_lab/riosclass_template/verilog/dv
+COMPILE_PATH=/work/stu/zxluan/riosclass_template/verilog/dv
 VERDI_HOME=/opt/cad/synopsys/installs/verdi/Q-2020.03-SP2
 SystemC=FALSE
 UUM=FALSE
