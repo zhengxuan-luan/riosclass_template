@@ -6,5 +6,7 @@
 *.lst
 *.vcd
 *.gtkw
-dc_result
-caravel
+dc_result/
+caravel/
+OpenLane/
+mgmt_core_wrapper/

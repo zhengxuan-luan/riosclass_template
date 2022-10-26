@@ -41,7 +41,6 @@ long long csr_value;
 
 extern void csr_monitor(int address, svLogic csr_write_valid, long long write_data){ //将信息保存下来， 在commit时使用
     if(csr_monitor_read && csr_write_valid){
-        // printf("3 %s\n", csr_name);
         csr_need_print = true;
         switch(address){
             case 0x305:  //mtvec
@@ -63,12 +62,13 @@ extern void csr_monitor(int address, svLogic csr_write_valid, long long write_da
 //embed this function in rcu, when one instruction is commited, print it in the log file  
 extern void log_print(svLogic co_commit, int co_pc_in, svLogic co_store_in, svLogic co_fence, svLogic co_mret, svLogic co_wfi,  svLogic co_uses_csr, int co_rob_rd, svLogic co_csr_iss_ctrl, int co_prf_name, int co_csr_address){
     if(co_commit){
-        coprint("-----\n");
-        coprint("0x%08X\n", co_pc_in);
+        coprint("core 0: 0x00000000%08X     ", co_pc_in);
         if(co_uses_csr){  //Zicsr
             if(csr_need_print){
                 coprint("CSR %s <- 0x%016lX\n", csr_name, csr_value);
                 csr_need_print = false;
+            } else{
+                coprint("\n");
             }
             if(co_rob_rd && csr_monitor_read){
                 coprint("x%d <- 0x%016lX\n", co_rob_rd, preg[co_prf_name]);
@@ -85,8 +85,9 @@ extern void log_print(svLogic co_commit, int co_pc_in, svLogic co_store_in, svLo
             if(!co_uses_csr){
                 if(co_rob_rd){
                     coprint("x%d <- 0x%016lX\n", co_rob_rd, preg[co_prf_name]);
+                } else {
+                    coprint("\n");
                 }
-                    
             }
         }
     }

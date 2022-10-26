@@ -17,7 +17,7 @@ The verification environment is located at **./verilog/dv**.
 ![](./images/spike-log.png)
 2. Use DPI to embed probe into core and print executing log, which is stored in **./verilog/dv/greenrio_log.txt**.
 ![](./images/hehe-log.png)
-### Open EDA flow
+## Open EDA flow
 1. SKY130A synthesis
     **./backend_log/RUN_1** records the GreenRio synthesis flow.
     the corner constraint is as follows:
